@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Imobiliária</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Corretor Imobiliário" class="corretor">
+            <h1>Felipe Nunes</h1>
+            <h2>Corretor Imobiliário</h2>
+        </div>
+    </header>
+    
+    <main>
+        <form id="contact-form">
+            <fieldset>
+                <legend>Como posso ajudar você?</legend>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="service1" name="services" value="Compra">
+                        <label for="service1">Compra de Imóvel</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="service2" name="services" value="Venda">
+                        <label for="service2">Venda de Imóvel</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="service3" name="services" value="Aluguel">
+                        <label for="service3">Aluguel de Imóvel</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="service4" name="services" value="Avaliação">
+                        <label for="service4">Avaliação de Imóvel</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual seria a cidade?</legend>
+                <label for="city">Cidade:</label>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Escolha a cidade</option>
+                    <option value="Salto">Salto</option>
+                    <option value="Itu">Itu</option>
+                    <option value="Indaiatuba">Indaiatuba</option>
+                    <option value="Sorocaba">Sorocaba</option>
+                    <option value="Campinas">Campinas</option>
+                    <option value="Cabreúva">Cabreúva</option>
+                    <option value="Jundiaí">Jundiaí</option>
+                </select>
+            </fieldset>
+
+            <label for="name">Qual o seu nome?</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Qual o seu e-mail?</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Fale um pouco mais sobre o que você precisa:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="response-message"></div>
+        <div id="loading-message" style="display: none;">Aguarde um instante...</div>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

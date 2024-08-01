@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Corretor Imobiliário" class="corretor">
+            <h1>Felipe Nunes</h1>
+            <h2>Corretor Imobiliário</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="thank-you-container">
+            <h1>Obrigado pelo seu contato!</h1>
+            <p>Seu e-mail foi enviado com sucesso. Em breve, você receberá uma resposta.</p>
+            <a href="/" class="thank-you-button">Voltar para a página inicial</a>
+        </div>
+    </main>
+</body>
+</html>

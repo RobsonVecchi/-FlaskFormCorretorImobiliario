@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px 40px; /* 20px verticalmente, 40px horizontalmente */
+    background-color: #f2f2f2; /* Cor de fundo suave */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.corretor {
+    width: 150px; /* Tamanho fixo */
+    height: 150px; /* Tamanho fixo para garantir que a foto fique redonda */
+    border-radius: 50%; /* Foto arredondada */
+    border: 3px solid #007bff; /* Borda colorida ao redor da foto */
+    object-fit: cover; /* Garante que a imagem preencha o container */
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 2rem; /* Tamanho de fonte maior para destaque */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    color: #555555; /* Cor de texto suave para o subtítulo */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666666; /* Cor de texto amigável */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #dddddd; /* Borda mais clara */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: #fafafa; /* Fundo leve para o fieldset */
+}
+
+legend {
+    font-weight: bold;
+    color: #333333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555555; /* Cor de texto suave */
+}
+
+.checkbox-group {
+    margin: 10px 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o checkbox e o texto */
+    margin-bottom: 10px; /* Espaço entre os checkboxes */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    width: 20px; /* Define a largura do checkbox para consistência */
+    height: 20px; /* Define a altura do checkbox para consistência */
+}
+
+.checkbox-item label {
+    margin-top: 2px; /* Ajusta a posição vertical do texto em relação ao checkbox */
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cccccc; /* Borda mais suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px; /* Altura aumentada para melhor visualização */
+    resize: vertical; /* Permite redimensionamento vertical */
+}
+
+select {
+    appearance: none; /* Remove o estilo padrão do select */
+    background-color: #ffffff; /* Fundo branco para o select */
+    border: 1px solid #cccccc; /* Borda mais suave */
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+#response-message {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto da resposta */
+    font-size: 1.1rem;
+}
+
+.thank-you-container {
+    text-align: center; /* Centraliza o texto e os elementos dentro do container */
+    padding: 20px;
+}
+
+.thank-you-button {
+    text-align: center !important;
+    display: inline-block; /* Garante que o botão seja tratado como um bloco em linha */
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.thank-you-button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+#loading-message {
+    text-align: center; /* Centraliza a mensagem de carregamento */
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333333; /* Cor da mensagem de carregamento */
+}
