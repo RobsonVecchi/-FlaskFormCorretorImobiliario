@@ -2,6 +2,9 @@
 
 Uma aplicação web desenvolvida com Flask para um corretor imobiliário. Este projeto fornece um formulário de contato que permite aos clientes enviar consultas e solicitações diretamente para o corretor. O sistema envia notificações por e-mail e redireciona os usuários para uma página de agradecimento após o envio bem-sucedido do formulário.
 
+## Veja o site
+O deploy foi feito através do Herokuapp [nesse link](https://mighty-dusk-69443-5cf8552a945b.herokuapp.com/) para você visualizar as funcionalidades descritas abaixo. Não é mais necessário realizar os próximos passos para ver o app funcionando, mas sim para rodá-lo através do terminal.
+
 ## Funcionalidades
 
 - **Formulário de Contato**: Coleta informações sobre serviços de interesse, cidade, nome, e-mail e mensagem.
